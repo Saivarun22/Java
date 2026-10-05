@@ -1,22 +1,5 @@
-public class Problemsday2{
-    public static void main (String args[]){
-        Scanner sc =new Scanner(System.in);
-        int  n =sc.nextInt();
-        int startIndex = 0;
-        int currentIndex = 1;
-        int count = 2;
-        
-        while(count <=n){
-        int temp = currentIndex;
-        currentIndex =startIndex + currentIndex;
-        startIndex = temp;
-        count++;
-        }
-
-        System.out.println(currentIndex);
-
-       
-      
-    }
-
-}
+System.out.println("Your code is now  Executing on Main Method");
+        // }catch(ArithmeticException e){
+        //     System.out.println("Enter Non Zero Values "+e.getMessage());
+        // }
+        // System.out.println("Main Method Terminated");
