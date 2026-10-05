@@ -1,0 +1,8 @@
+# Java compiled files
+*.class
+
+# VS Code settings
+.vscode/
+
+# Temporary Code Runner file
+tempCodeRunnerFile.java
