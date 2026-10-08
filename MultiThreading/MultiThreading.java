@@ -1,12 +1,38 @@
 import java.util.*;
 class UNO implements Runnable{
-    synchronized public void run(){
+
+//         synchronized public void run(){
+
+//         String player =Thread.currentThread().getName();
+//         try{
+//         System.out.println(player + " UNO is being played"  );
+//         Thread.sleep(6000);
+
+
+//         System.out.println(player + " Swipe Right +4 cards");
+//         Thread.sleep(4000);
+
+//         System.out.println(player + " Swipe left +2 cards");
+//         Thread.sleep(2000);
+
+//         System.out.println(player + " Colour change change  to red");
+//         Thread.sleep(1000);
+
+//         System.out.println(player + " Uno");
+//         Thread.sleep(1000);
+//         }
+//         catch(InterruptedException e1){
+//         e1.printStackTrace();
+//     }
+// }
+     public void run(){
 
         String player =Thread.currentThread().getName();
         try{
         System.out.println(player + " UNO is being played"  );
         Thread.sleep(6000);
 
+        synchronized (this){
         System.out.println(player + " Swipe Right +4 cards");
         Thread.sleep(4000);
 
@@ -14,9 +40,9 @@ class UNO implements Runnable{
         Thread.sleep(2000);
 
         System.out.println(player + " Colour change change  to red");
-        Thread.sleep(1000);
+        Thread.sleep(1000);}
 
-        System.out.println(player + " ṄUno");
+        System.out.println(player + " Uno");
         Thread.sleep(1000);
         }
         catch(InterruptedException e1){
